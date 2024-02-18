@@ -7,18 +7,23 @@
     
     
   <script type="module" crossorigin src="/vanilla-app-template/commonHelpers.js"></script>
-  <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-ad859c2f.js">
-  <link rel="stylesheet" href="/vanilla-app-template/assets/vendor-e5212ee8.css">
-  <link rel="stylesheet" href="/vanilla-app-template/assets/index-d2d692fc.css">
+  <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-bee2f3af.js">
+  <link rel="stylesheet" href="/vanilla-app-template/assets/vendor-cf6910df.css">
+  <link rel="stylesheet" href="/vanilla-app-template/assets/index-96953b52.css">
 </head>
+
+
 <body>
-    <div class="container">
-        <form id="searchForm">
-            <input type="text" id="searchInput" placeholder="Enter your search term" />
-            <button type="submit">Search</button>
-        </form>
-        <div id="imageGallery"></div>
-    </div>
+  <div class="search-container">
+    <form id="searchForm">
+      <input type="text" id="searchInput" placeholder="Enter your search term" required>
+      <button type="submit">Search</button>
+    </form>
+  </div>
+
+  <div id="gallery" class="gallery-container"></div>
+
+
 
    
     <script src="./main.js" defer></script>
