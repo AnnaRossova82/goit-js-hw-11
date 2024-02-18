@@ -7,14 +7,19 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/reset.css" />
 </head>
+
+
 <body>
-    <div class="container">
-        <form id="searchForm">
-            <input type="text" id="searchInput" placeholder="Enter your search term" />
-            <button type="submit">Search</button>
-        </form>
-        <div id="imageGallery"></div>
-    </div>
+  <div class="search-container">
+    <form id="searchForm">
+      <input type="text" id="searchInput" placeholder="Enter your search term" required>
+      <button type="submit">Search</button>
+    </form>
+  </div>
+
+  <div id="gallery" class="gallery-container"></div>
+
+
 
    
     <script src="./main.js" defer></script>

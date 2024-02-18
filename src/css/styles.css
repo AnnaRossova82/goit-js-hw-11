@@ -10,41 +10,59 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #f0f0f0;
+  background-color: #f4f4f4;
 }
 
-.container {
+.search-container {
   text-align: center;
+  margin: 20px 0;
 }
 
 form {
-  margin-bottom: 20px;
+  display: inline-block;
 }
 
-input {
+input[type="text"] {
   padding: 8px;
-  font-size: 16px;
 }
 
 button {
-  padding: 8px 16px;
-  font-size: 16px;
+  padding: 8px 12px;
   cursor: pointer;
 }
 
-#imageGallery {
+.gallery-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 10px;
 }
 
-.imageCard {
-  margin: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.card {
+  width: 300px;
+  border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-info {
+  padding: 10px;
+}
+
+.card-info h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.card-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #777;
+}
+
