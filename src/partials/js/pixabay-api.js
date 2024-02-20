@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const searchInput = document.getElementById('searchInput');
     const galleryContainer = document.getElementById('gallery');
    
-
     const lightbox = new SimpleLightbox('.gallery-container a');
 
       
@@ -25,19 +24,16 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         return;
       }
-  
-
       galleryContainer.innerHTML = '';
       loader.style.display = 'block'; 
- 
-
-      fetchImages(searchTerm);
+       fetchImages(searchTerm);
     });
   
     function fetchImages(searchTerm) {
       const spinner = new Spinner().spin(loader);
+  
  
-        const apiKey = '42441729-7dc314f47a8382b16bbe5b871';
+      const apiKey = '42441729-7dc314f47a8382b16bbe5b871';
       const apiUrl = `https://pixabay.com/api/?key=${apiKey}&q=${searchTerm}&image_type=photo&orientation=horizontal&safesearch=true`;
   
       fetch(apiUrl)
